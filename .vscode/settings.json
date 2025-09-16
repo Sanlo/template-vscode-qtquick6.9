@@ -1,0 +1,10 @@
+{
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.includePath": ["${workspaceFolder}/**", "${QTDIR}/include/**"],
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+  "clangd.arguments": ["-header-insertion=never"],
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true
+}
