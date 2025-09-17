@@ -4,6 +4,7 @@ project(qtquick_template VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(QT_QML_GENERATE_QMLLS_INI ON)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
@@ -31,7 +32,7 @@ set_target_properties(qtquick_template PROPERTIES
 target_link_libraries(qtquick_template
     PRIVATE Qt6::Quick)
 
-include(GNUInstallDirs)
-install(TARGETS qtquick_template
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+# include(GNUInstallDirs)
+# install(TARGETS qtquick_template
+#     BUNDLE DESTINATION .
+#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

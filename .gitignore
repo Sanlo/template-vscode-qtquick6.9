@@ -2,3 +2,4 @@
 .cache
 compile_commands.json
 CMakeLists.txt.user
+.qmlls.ini
